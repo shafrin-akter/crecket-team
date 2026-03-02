@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Slow Left-Arm Orthodox",
+    "price": 1500000,
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/Fbf3t160/cf-3d-Jq1-OHy.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1200000,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/JRtN3j1D/tamim-iqbal.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicket-Keeper Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 1100000,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/sM1V1cJ/mushfiqur-rahman.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off Break",
+    "price": 1000000,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/gLhf17LP/Mahmudullah-Riyad.png"
+  },
+  {
+    "id": 5,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm Fast-Medium",
+    "price": 1300000,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/5X3q5WDh/mustafizur-rahman.webp"
+  },
+  {
+    "id": 6,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "role": "Wicket-Keeper Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "None",
+    "price": 950000,
+    "rating": 4.5,
+    "image": "https://i.ibb.co.com/qFxj3yzP/Litton-Das.webp"
+  },
+  {
+    "id": 7,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Right-Arm Fast",
+    "price": 900000,
+    "rating": 4.4,
+    "image": "https://i.ibb.co.com/CTVLTgp/taskin.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mehidy Hasan Miraz",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand-Bat",
+    "bowlingStyle": "Off Break",
+    "price": 980000,
+    "rating": 4.6,
+    "image": "https://i.ibb.co.com/zhhRXw2b/mehidy-hasan.webp"
+  },
+  {
+    "id": 9,
+    "name": "Soumya Sarkar",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Medium Fast",
+    "price": 870000,
+    "rating": 4.2,
+    "image": "https://i.ibb.co.com/xqW68LvP/sommo.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Nasum Ahmed",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Slow Left-Arm Orthodox",
+    "price": 800000,
+    "rating": 4.1,
+    "image": "https://i.ibb.co.com/ycZLHN0d/nazmul.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Shoriful Islam",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "bowlingStyle": "Left-Arm Fast",
+    "price": 850000,
+    "rating": 4.3,
+    "image": "https://i.ibb.co.com/6cmzyBP7/sumon.jpg"
+  }
+]
