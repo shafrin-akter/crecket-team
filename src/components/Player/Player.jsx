@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import report from "../../assets/report.png";
 import user from "../../assets/user.png";
 
@@ -36,7 +37,11 @@ const Player = ({
     setIsSelected(true);
     // setBalance(balance - price.split(",").join(""));
     if (balance < price) {
-      alert("Not Availabel Coin");
+      toast("Not Availabel Coin");
+      return;
+    }
+    if (countPlayer.length === 6) {
+      toast("Alreday 6 Players Selected");
       return;
     }
     setCountPlayer([...countPlayer, player]);
