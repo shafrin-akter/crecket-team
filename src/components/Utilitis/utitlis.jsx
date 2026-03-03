@@ -1,31 +1,29 @@
-const getPlayerFromLoacalStorage = () => {
+const getPlayerFromLocalStorage = () => {
   const storedPlayerString = localStorage.getItem("cart");
   if (storedPlayerString) {
-    const storedPlayer = JSON.parse(storedPlayerString);
-    return storedPlayer;
+    return JSON.parse(storedPlayerString); // array of objects
   }
   return [];
 };
 
 const savedPlayers = (cart) => {
-  const playersStringified = JSON.stringify(cart);
-  localStorage.setItem("cart", playersStringified);
+  localStorage.setItem("cart", JSON.stringify(cart));
 };
 
-const addItemPlayer = (id) => {
-  const cart = getPlayerFromLoacalStorage();
-  const newItemPlayer = [...cart, id];
-  savedPlayers(newItemPlayer);
+const addItemPlayer = (player) => {
+  const cart = getPlayerFromLocalStorage();
+  const newCart = [...cart, player]; // full object add
+  savedPlayers(newCart);
 };
 
-const removeFromLocalStorage = (id) => {
-  const storedCart = getPlayerFromLoacalStorage();
-  const reminingCart = storedCart.filter((storeId) => storeId.id !== id);
-  savedPlayers(reminingCart);
+const removeFromLocalStorage = (player) => {
+  const storedCart = getPlayerFromLocalStorage();
+  const remainingCart = storedCart.filter((p) => p.id !== player.id);
+  savedPlayers(remainingCart);
 };
 
 export {
   addItemPlayer as addPlayer,
-  getPlayerFromLoacalStorage as getStroePlayer,
+  getPlayerFromLocalStorage as getStorePlayer,
   removeFromLocalStorage as romove,
 };

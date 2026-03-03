@@ -1,6 +1,6 @@
 import { use, useEffect } from "react";
 import Player from "../Player/Player";
-import { getStroePlayer } from "../Utilitis/utitlis";
+import { getStorePlayer } from "../Utilitis/utitlis";
 
 const AvailavelPlayers = ({
   availaverlPlayers,
@@ -12,7 +12,7 @@ const AvailavelPlayers = ({
   const players = use(availaverlPlayers);
 
   useEffect(() => {
-    const storePlayersId = getStroePlayer();
+    const storePlayersId = getStorePlayer();
     const storedPlayer = [];
 
     for (const id of storePlayersId) {

@@ -24,7 +24,7 @@ function App() {
     setBalance(balance + couplayer.price);
     console.log(couplayer);
     toast("successfully Remove");
-    romove(couplayer.id);
+    romove(couplayer);
   };
 
   return (
