@@ -4,6 +4,7 @@ import "./App.css";
 import AvailavelPlayers from "./components/AvailavelPlayers/AvailavelPlayers";
 import Navbar from "./components/Navbar/Navbar";
 import SelectedPlayers from "./components/SelecterPlayers/SelectedPlayers";
+import { romove } from "./components/Utilitis/utitlis";
 const availabelPromise = async () => {
   const res = await fetch("./players.json");
   return res.json();
@@ -23,6 +24,7 @@ function App() {
     setBalance(balance + couplayer.price);
     console.log(couplayer);
     toast("successfully Remove");
+    romove(couplayer.id);
   };
 
   return (

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import report from "../../assets/report.png";
 import user from "../../assets/user.png";
+import { addPlayer } from "../Utilitis/utitlis";
 
 // {
 //     "id": 9,
@@ -47,6 +48,7 @@ const Player = ({
     setCountPlayer([...countPlayer, player]);
     setBalance(balance - price);
     toast("Congras Your Players Is Selected");
+    addPlayer(player.id);
   };
 
   return (

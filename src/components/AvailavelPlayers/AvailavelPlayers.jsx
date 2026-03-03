@@ -1,5 +1,6 @@
-import { use } from "react";
+import { use, useEffect } from "react";
 import Player from "../Player/Player";
+import { getStroePlayer } from "../Utilitis/utitlis";
 
 const AvailavelPlayers = ({
   availaverlPlayers,
@@ -9,6 +10,23 @@ const AvailavelPlayers = ({
   setCountPlayer,
 }) => {
   const players = use(availaverlPlayers);
+
+  useEffect(() => {
+    const storePlayersId = getStroePlayer();
+    const storedPlayer = [];
+
+    for (const id of storePlayersId) {
+      const cartPlayer = players.find((ply) => ply.id === id);
+      if (cartPlayer) {
+        storedPlayer.push(cartPlayer);
+      }
+    }
+
+    setCountPlayer(storedPlayer); // 🔥 IMPORTANT
+
+    console.log("stored cart", storedPlayer);
+  }, [players]);
+
   return (
     <div className="md:w-[1200px] mx-auto">
       <div className="grid grid-cols md:grid-cols-3 gap-2">
