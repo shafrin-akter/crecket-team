@@ -1,5 +1,5 @@
 import { Suspense, useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "./App.css";
 import AvailavelPlayers from "./components/AvailavelPlayers/AvailavelPlayers";
 import Navbar from "./components/Navbar/Navbar";
@@ -22,6 +22,7 @@ function App() {
     setCountPlayer(reMove);
     setBalance(balance + couplayer.price);
     console.log(couplayer);
+    toast("successfully Remove");
   };
 
   return (

@@ -46,6 +46,7 @@ const Player = ({
     }
     setCountPlayer([...countPlayer, player]);
     setBalance(balance - price);
+    toast("Congras Your Players Is Selected");
   };
 
   return (

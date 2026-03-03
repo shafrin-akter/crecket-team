@@ -10,6 +10,14 @@ const SelectedPlayers = ({ countPlayer, removePlayer }) => {
           couplayer={couplayer}
         ></SelectedPlayer>
       ))}
+      <div className="border w-50 p-2 rounded-2xl mt-2">
+        <a
+          href="./"
+          className="btn rounded-2xl flex justify-center bg-[#E7FE29] font-bold"
+        >
+          Add More Players
+        </a>
+      </div>
     </div>
   );
 };
